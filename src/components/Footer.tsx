@@ -2,7 +2,7 @@ import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import '../assets/styles/Footer.scss'; 
-import logosynapseImage from '../assets/images/logosynapse1.png'; 
+import logotatuiImage from '../assets/images/tatuilogo.png'; 
 
 function Footer() {
   return (
@@ -10,7 +10,7 @@ function Footer() {
 
       <div className="footer-logo-container">
     
-        <img src={logosynapseImage} alt="Logo Synapse" className="footer-logo-center" />
+        <img src={logotatuiImage} alt="Logo Synapse" className="footer-logo-center" />
       </div>
 
     
@@ -21,7 +21,7 @@ function Footer() {
           <a href="https://www.linkedin.com/in/gersg/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
         </div>
         
-        <p>© Synapse AI by Gerson Espindola</p>
+        <p>© Tatui Tech by Gerson Espindola</p>
       </div>
     </footer>
   );
