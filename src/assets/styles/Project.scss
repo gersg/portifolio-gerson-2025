@@ -1,0 +1,113 @@
+/* Estilos para o container principal da seção de projetos */
+.projects-container {
+    display: flex;           // Usa flexbox para organizar o título e o grid em coluna
+    flex-direction: column;  // Elementos internos (h1 e projects-grid) empilhados verticalmente
+    align-items: center;     // Centraliza horizontalmente o h1 e o projects-grid (se tiver max-width)
+    padding: 5% 10%;         // Padding responsivo para as laterais
+    text-align: center;      // Centraliza o título h1, mas os cards terão seu próprio text-align
+    
+    h1 {
+        font-size: 2.5em;       // Tamanho do título principal
+        margin-bottom: 30px;    // Espaço abaixo do título
+        color: #333;            // Cor do título
+    }
+}
+
+/* Estilos para o grid de projetos */
+.projects-grid {
+    display: grid;
+    /* Colunas responsivas:
+       - 'repeat(auto-fill, ...)' cria quantas colunas couberem.
+       - 'minmax(280px, 1fr)' define que cada coluna terá no mínimo 280px e no máximo 1 fração do espaço restante.
+       Isso garante que em telas grandes caibam mais cards (ex: 3 ou 4), e em telas menores, menos (ex: 2 ou 1).
+    */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px; /* Espaçamento entre os cards (gap) */
+    justify-content: center; /* Centraliza os cards dentro do grid container */
+    align-items: stretch; /* Garante que todos os cards na mesma linha tenham a mesma altura */
+    max-width: 1200px; /* Define uma largura máxima para o grid de cards, centralizando-o */
+    margin: 0 auto; /* Centraliza o grid horizontalmente na página */
+
+    /* Media query para telas médias (ex: tablets - até 992px) */
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    /* Media query para telas menores (ex: celulares - até 576px) */
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr; /* Apenas 1 coluna em celulares */
+        gap: 15px;
+    }
+}
+
+/* Estilos individuais de cada card de projeto */
+.project {
+    background-color: #fff;       // Fundo branco para os cards
+    border-radius: 8px;           // Cantos arredondados
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Sombra sutil para profundidade
+    overflow: hidden;             // Garante que a imagem e outros conteúdos arredondados não vazem
+    text-align: left;             // Alinha o texto dentro do card à esquerda
+    text-decoration: none;        // Remove sublinhado padrão de links no card
+    color: inherit;               // Herda a cor do texto do pai
+    display: flex;                // Usa flexbox para organizar o conteúdo interno (img, h2, p)
+    flex-direction: column;       // Conteúdo interno empilhado verticalmente
+    transition: transform 0.3s ease, box-shadow 0.3s ease; // Transição suave para efeitos de hover
+
+    // **Essencial para padronizar a altura do card e a UX**
+    min-height: 400px; /* Altura mínima para o card. Ajuste este valor. */
+                       /* Isso ajuda a manter todos os cards na mesma linha com altura igual,
+                          mesmo que tenham descrições de tamanhos diferentes. */
+    
+    &:hover {
+        transform: translateY(-5px); /* Efeito de "levantar" o card no hover */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada no hover */
+    }
+
+    /* Estilos para a imagem dentro do card */
+    img {
+        width: 100%;       /* A imagem ocupará 100% da largura do card */
+        height: 180px;     /* TODAS as imagens terão 180px de altura fixa */
+        object-fit: cover; /* ESSENCIAL: Garante que a imagem preencha o espaço sem distorcer, cortando o excesso */
+        border-bottom: 1px solid #eee; /* Linha sutil abaixo da imagem */
+        border-radius: 8px 8px 0 0; /* Arredonda apenas os cantos superiores da imagem para combinar com o card */
+        transition: transform 0.3s ease; /* Transição para o efeito zoom */
+    }
+
+    /* Estilos para o efeito zoom na imagem ao passar o mouse */
+    .zoom {
+        border-radius: 5px; /* Manter se quiser arredondamento geral, mas a img já tem */
+        transition: transform .2s;
+        /* margin: 0 auto; - Esta propriedade não é necessária aqui para a imagem se width: 100% */
+    }
+    .zoom:hover {
+        transform: scale(1.05); /* Efeito de zoom na imagem ao passar o mouse */
+    }
+
+    /* Estilos para o título h2 dentro do card */
+    h2 {
+        font-size: 1.3em;       /* Tamanho do título do projeto */
+        margin: 15px 15px 10px; /* Margens internas (topo, laterais, fundo) */
+        color: #333;            // Cor do título do card
+        line-height: 1.3;       // Altura da linha para melhor leitura
+        transition: text-decoration 0.15s ease-in-out; /* Transição suave para o sublinhado */
+        
+        &:hover {
+            text-decoration: underline; // Sublinhado no hover do título
+        }
+    }
+
+    /* Estilos para o parágrafo de descrição dentro do card */
+    p {
+        font-size: 0.9em;        /* Tamanho da fonte da descrição */
+        line-height: 1.5;        /* Altura da linha para melhor leitura */
+        margin: 0 15px 15px;     /* Margens internas para a descrição */
+        color: #666;             // Cor da descrição
+        flex-grow: 1;            /* Permite que o parágrafo "cresça" e preencha o espaço vertical disponível,
+                                     ajudando a empurrar o final do card para baixo e manter a altura consistente. */
+        overflow: hidden;        /* Esconde qualquer texto que ultrapasse o limite de linhas */
+        text-overflow: ellipsis; /* Adiciona "..." no final se o texto for cortado */
+        display: -webkit-box;    /* Propriedades para limitar o texto a um número específico de linhas */
+        -webkit-box-orient: vertical;
+    }
+}
