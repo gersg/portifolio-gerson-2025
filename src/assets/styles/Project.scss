@@ -17,12 +17,12 @@
 .projects-grid {
     display: grid;
    
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 20px; /* Espaçamento entre os cards (gap) */
     justify-content: center; /* Centraliza os cards dentro do grid container */
     align-items: stretch; /* Garante que todos os cards na mesma linha tenham a mesma altura */
     max-width: 1200px; /* Define uma largura máxima para o grid de cards, centralizando-o */
-    margin: 0 auto; /* Centraliza o grid horizontalmente na página */
+    margin: 10px auto; /* Centraliza o grid horizontalmente na página */
 
     /* Media query para telas médias (ex: tablets - até 992px) */
     @media (max-width: 992px) {

@@ -15,6 +15,8 @@ import FadeIn from './components/FadeIn';
 import './index.scss';
 
 function App() {
+    <img src="" alt="" />
+
     const [mode, setMode] = useState<string>('dark');
 
     const handleModeChange = () => {
