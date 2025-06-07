@@ -16,13 +16,9 @@
 /* Estilos para o grid de projetos */
 .projects-grid {
     display: grid;
-    /* Colunas responsivas:
-       - 'repeat(auto-fill, ...)' cria quantas colunas couberem.
-       - 'minmax(280px, 1fr)' define que cada coluna terá no mínimo 280px e no máximo 1 fração do espaço restante.
-       Isso garante que em telas grandes caibam mais cards (ex: 3 ou 4), e em telas menores, menos (ex: 2 ou 1).
-    */
+   
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px; /* Espaçamento entre os cards (gap) */
+    gap: 20px; /* Espaçamento entre os cards (gap) */
     justify-content: center; /* Centraliza os cards dentro do grid container */
     align-items: stretch; /* Garante que todos os cards na mesma linha tenham a mesma altura */
     max-width: 1200px; /* Define uma largura máxima para o grid de cards, centralizando-o */
@@ -67,8 +63,8 @@
     /* Estilos para a imagem dentro do card */
     img {
         width: 100%;       /* A imagem ocupará 100% da largura do card */
-        height: 180px;     /* TODAS as imagens terão 180px de altura fixa */
-        object-fit: cover; /* ESSENCIAL: Garante que a imagem preencha o espaço sem distorcer, cortando o excesso */
+        height: 350px;     /* TODAS as imagens terão 180px de altura fixa */
+        object-fit: fill; /* ESSENCIAL: Garante que a imagem preencha o espaço sem distorcer, cortando o excesso */
         border-bottom: 1px solid #eee; /* Linha sutil abaixo da imagem */
         border-radius: 8px 8px 0 0; /* Arredonda apenas os cantos superiores da imagem para combinar com o card */
         transition: transform 0.3s ease; /* Transição para o efeito zoom */

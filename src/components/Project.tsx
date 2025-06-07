@@ -1,13 +1,14 @@
 import React from "react";
 import '../assets/styles/Project.scss';
-import ecopracaImage from '../assets/images/ecopraca.jpg';
+import hortaImage from '../assets/images/horta do futuro2.png';
 import guaraImage from '../assets/images/guara.png';
 import healSafeImage from '../assets/images/healsafelogo.png';
 import mentisImage from '../assets/images/mentis.png';
 import nasa2Image from '../assets/images/nasa2.jpg';
-import tatuitechImage from '../assets/images/tatuitech.png';
+import tatuitechImage from '../assets/images/tatuilogo.png';
 import zoni2Image from '../assets/images/zoni2.png';
 import imagerenovaSystem from '../assets/images/image.png';
+import ecoflixImage from '../assets/images/ecoflix.png';
 
 
 function Project() {
@@ -17,7 +18,7 @@ function Project() {
         <div className="projects-grid">
           <div className="project">
             <a
-              href="./EmBreve"
+              href="https://www.youtube.com/"
               target="_blank"
               rel="noreferrer"
             >
@@ -30,7 +31,7 @@ function Project() {
               />
             </a>
             <a
-              href="./EmBreve"
+              href="https://www.youtube.com/"
               target="_blank"
               rel="noreferrer"
             >
@@ -42,7 +43,7 @@ function Project() {
               ameaças cibernéticas, vazamentos de dados sensíveis e interrupções
               operacionais. Por meio de ferramentas integradas, a plataforma
               oferece monitoramento em tempo real, análise preditiva, gestão de
-              acessos e resposta automatizada a incidentes..
+              acessos e resposta automatizada a incidentes. Criado para o Hackaton Imdcode81 - 2025.
             </p>
           </div>
           <div className="project">
@@ -52,7 +53,7 @@ function Project() {
               rel="noreferrer"
             >
               <img
-                src={ecopracaImage}
+                src={hortaImage}
                 className="zoom"
                 alt="Thumbnail do Projeto Ecopraça"
                 width="100%"
@@ -63,12 +64,10 @@ function Project() {
               target="_blank"
               rel="noreferrer"
             >
-              <h2>EcoPraça: Plataforma Colaborativa Ambiental</h2>
+              <h2>Horta Resiliente e Circular</h2>
             </a>
             <p>
-              Criei uma plataforma web para conectar projetos de
-              sustentabilidade e voluntários, com foco em impacto
-              socioambiental, usando **Ruby on Rails**.
+              A Horta Resiliente e Circular é um projeto que une sustentabilidade, resiliência climática e educação. Trata-se de uma horta comunitária equipada com tecnologia IoT para monitoramento inteligente, funcionando também como um laboratório de economia circular para escolas e uma base para resiliência climática. Essa solução promove segurança alimentar, educação prática, e preparação comunitária frente às mudanças climáticas. Projeto ainda esta em desenvolvimento.
             </p>
           </div>
           <div className="project">
@@ -89,40 +88,36 @@ function Project() {
               target="_blank"
               rel="noreferrer"
             >
-              <h2>Mentis: Gestão para Comunidades Terapêuticas</h2>
+              <h2>Mentis: Sistema de Saude, Bem estar e Mentalidade</h2>
             </a>
             <p>
-              Sistema de gestão integrado para comunidades terapêuticas,
-              abrangendo controle de pacientes, agendamentos, estoque e
-              relatórios de progresso. Desenvolvido com **Ruby on Rails** e
-              **JavaScript**.
+              A Mentis é uma plataforma digital e uma página no Instagram dedicada a explorar e promover conhecimento sobre a mente, o espírito, a saúde mental, a psiquiatria, a psicologia e a física quântica. Inspirada pela interseção entre ciência, espiritualidade e bem-estar, a Mentis busca ser um ponto de conexão para indivíduos que desejam expandir sua consciência, cuidar da saúde mental e explorar novos paradigmas do pensamento humano.
+              A ideia central da Mentis é oferecer um espaço seguro, informativo e inspirador para que as pessoas possam compreender melhor suas mentes, nutrir seus espíritos e aplicar conceitos científicos e psicológicos na busca pelo autoconhecimento e bem-estar. A Mentis também busca desmistificar conceitos da física quântica, conectando-os à experiência humana e espiritual.
+
             </p>
           </div>
           <div className="project">
             <a
-              href="https://placeholder.com/guara"
+              href="https://www.youtube.com/watch?v=t0YhLlujkHY&list=PLThnzmUyIepv-Ly1GVOAdKJ9T8-z1CyxL&index=2"
               target="_blank"
               rel="noreferrer"
             >
               <img
                 src={guaraImage}
                 className="zoom"
-                alt="Thumbnail do Chatbot Guará"
+                alt="Thumbnail do Guardiao Guará"
                 width="100%"
               />
             </a>
             <a
-              href="https://placeholder.com/guara"
+              href="https://www.youtube.com/watch?v=t0YhLlujkHY&list=PLThnzmUyIepv-Ly1GVOAdKJ9T8-z1CyxL&index=2"
               target="_blank"
               rel="noreferrer"
             >
-              <h2>ChatBot Guará: Automação e Atendimento WhatsApp</h2>
+              <h2>Guardiao Guara</h2>
             </a>
             <p>
-              Implementei um chatbot inteligente para automatização de
-              atendimento ao cliente, com integração direta via API do
-              **WhatsApp**. Capaz de responder a consultas e agendamentos,
-              usando **Python**.
+              Uma plataforma digital que reúne dados e conecta cidadãos, empresas e governos para melhorar a eficiência no uso de recursos naturais (água, energia, resíduos). A plataforma integra sensores IoT, gamificação e uma interface amigável para engajar a comunidade. Criada para o Hackaton da Campus Party - Goias 2024.
             </p>
           </div>
           <div className="project">
@@ -139,18 +134,15 @@ function Project() {
               />
             </a>
             <a href="https://placeholder.com/" target="_blank" rel="noreferrer">
-              <h2>Hackathon NASA: Análise de Componentes Espaciais</h2>
+              <h2>Hackathon Nasa Space Apps 2024</h2>
             </a>
             <p>
-              Participei de um hackathon focado em análise de dados da NASA,
-              desenvolvendo um painel interativo para visualizar o desempenho de
-              componentes críticos de missões espaciais, utilizando **Python** e
-              **JavaScript**.
+              Desenvolvemos uma ferramenta para democratizar o acesso a informações sobre os experimentos biologicos no espaco. O projeto foi apresentado no Hackathon Nasa Space Apps 2024 onde recebeu o premiacao de primeiro lugar local e selecionado para a etapa mundial. Criado para o Hackathon Nasa Space Apps 2024.
             </p>
           </div>
           <div className="project">
             <a
-              href="https://placeholder.com/zoni"
+              href="https://www.youtube.com/watch?v=CLxz5DEV0qw&list=PLThnzmUyIepv-Ly1GVOAdKJ9T8-z1CyxL&index=3"
               target="_blank"
               rel="noreferrer"
             >
@@ -162,17 +154,14 @@ function Project() {
               />
             </a>
             <a
-              href="https://placeholder.com/zoni"
+              href="https://www.youtube.com/watch?v=CLxz5DEV0qw&list=PLThnzmUyIepv-Ly1GVOAdKJ9T8-z1CyxL&index=3"
               target="_blank"
               rel="noreferrer"
             >
-              <h2>Zoni: Plataforma de Streaming de Música (Clone Spotify)</h2>
+              <h2>Zonia - Plataforma de Gestão Ambiental</h2>
             </a>
             <p>
-              Construí um clone funcional da interface de um serviço de
-              streaming de música, com reprodução de áudio, criação de playlists
-              e busca. Utilizei **React** para o frontend e um backend simples
-              em **Flask**.
+              Sistema de monitoramento distribuído utilizando sensores de temperatura infravermelho conectados a dispositivos Arduino, instalados em locais estratégicos, ao longo das frentes de expansão do desmatamento. Esses sensores detectam aumentos bruscos de temperatura, enviando alertas em tempo real para gestores e brigadistas via aplicativos como Telegram ou WhatsApp. O Projeto sendo contemplado com o 2 lugar, Desenvolvido para o Hackathon Impulso Regional do INEP - 2024.
             </p>
           </div>
           <div className="project">
@@ -182,7 +171,7 @@ function Project() {
               rel="noreferrer"
             >
               <img
-                src={nasa2Image}
+                src={ecoflixImage}
                 className="zoom"
                 alt="Thumbnail do EcoFlix / NASA"
                 width="100%"
@@ -193,13 +182,11 @@ function Project() {
               target="_blank"
               rel="noreferrer"
             >
-              <h2>EcoFlix: Conteúdo Socioambiental e Espacial</h2>
+              <h2>EcoFlix</h2>
             </a>
             <p>
-              Plataforma de streaming de vídeo inspirada na Netflix, dedicada a
-              documentários sobre sustentabilidade e exploração espacial.
-              Desenvolvida com **React** e **Ruby on Rails** para gerenciamento
-              de conteúdo.
+            EcoFlix é mais do que uma plataforma de streaming: é um movimento global para promover a conscientização ambiental e inspirar mudanças positivas no mundo. Com foco em conteúdo educativo e inspirador, a plataforma busca engajar usuários de todas as idades em temas críticos para o futuro do planeta, como a preservação da biodiversidade, combate às mudanças climáticas, energias renováveis, e hábitos de vida sustentáveis. EcoFlix combina entretenimento e educação, criando um espaço onde documentários premiados, séries originais e filmes de impacto são acessíveis a uma audiência engajada e interessada em contribuir para um mundo melhor.
+             
             </p>
           </div>
           <div className="project">
@@ -220,13 +207,10 @@ function Project() {
               target="_blank"
               rel="noreferrer"
             >
-              <h2>EcoFlix: Conteúdo Socioambiental e Espacial</h2>
+              <h2>SIGCT - Sistema Integrado de Gestão de Comunidades Terapêuticas</h2>
             </a>
             <p>
-              Plataforma de streaming de vídeo inspirada na Netflix, dedicada a
-              documentários sobre sustentabilidade e exploração espacial.
-              Desenvolvida com **React** e **Ruby on Rails** para gerenciamento
-              de conteúdo.
+            Sistema web completo e autônomo para a gestão de uma comunidade terapêutica. Este sistema visa otimizar as operações diárias, abrangendo desde o gerenciamento de usuários e documentação clínica até a hotelaria, farmácia e atividades terapêuticas. 
             </p>
           </div>
           <div className="project">
@@ -238,7 +222,7 @@ function Project() {
               <img
                 src={tatuitechImage}
                 className="zoom"
-                alt="Thumbnail do EcoFlix / NASA"
+                alt="Thumbnail da Tatui Tech"
                 width="100%"
               />
             </a>
@@ -247,13 +231,13 @@ function Project() {
               target="_blank"
               rel="noreferrer"
             >
-              <h2>EcoFlix: Conteúdo Socioambiental e Espacial</h2>
+              <h2>TATUi TECH: Inovação que se adapta. Soluções que transformam.</h2>
             </a>
             <p>
-              Plataforma de streaming de vídeo inspirada na Netflix, dedicada a
-              documentários sobre sustentabilidade e exploração espacial.
-              Desenvolvida com **React** e **Ruby on Rails** para gerenciamento
-              de conteúdo.
+              TATUi TECH é a vanguarda da inovação tecnológica, onde a adaptabilidade encontra a excelência. Somos mais que uma startup de tecnologia; somos arquitetos de soluções inteligentes e robustas, desenhadas para impulsionar o futuro dos negócios. Inspirados na resiliência e na engenharia natural do tatu, construímos sistemas e plataformas que se moldam precisamente às necessidades de cada cliente, garantindo eficiência, segurança e crescimento contínuo.
+
+              Nossa essência reside na capacidade de transformar desafios complexos em oportunidades estratégicas, através de uma abordagem que prioriza a inovação contínua, o design intuitivo e a confiabilidade inabalável. Seja na otimização de processos com nosso SaaS personalizável, no desenvolvimento de soluções customizadas de ponta, ou na exploração da Internet das Coisas e cibersegurança adaptativa.
+              
             </p>
           </div>
           {/* A imagem logo2heads.png é mais adequada para um footer ou cabeçalho,
